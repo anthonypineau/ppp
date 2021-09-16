@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 nav {
     overflow: hidden;
     min-height: 50px;
+    padding: 10px 20px;
+    background-color: #3399FE;
 }
 
 nav ul {
@@ -13,19 +21,25 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav li {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
     display: inline-block;
     padding: 14px 16px;
 }
 
 nav li:hover{
     cursor: pointer;
+    opacity: 0.5;
 }
 
-nav .right {
-    float:right;
+nav li i {
+    color: white;
 }
 
 .dropdown:hover .dropdown-content {
@@ -37,8 +51,8 @@ nav .right {
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #3399FE;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
 }
 
 .open-menu {
@@ -54,14 +68,15 @@ nav .right {
         margin: 0 auto;
     }
 
-    .responsive li:not(:first-child, .right){
+    .responsive li:not(:first-child){
         display: block;
         text-align: center;
     }
 }
 
 #app{
-    min-height: calc(100vh - 50px - 40px);
+    min-height: calc(100vh - 120px);
+    padding: 20px 50px;
 }
 
 footer {
@@ -70,6 +85,8 @@ footer {
     clear: both;
     width: 100%;
     bottom: 0;
-    padding-bottom: 10px;
+    padding: 10px 0px;
     text-align: center;
+    background-color: #3399FE;
+    color: white;
 }
