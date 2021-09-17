@@ -33,7 +33,7 @@ nav li {
     padding: 14px 16px;
 }
 
-nav li:hover{
+nav li:hover:not(.dropdown){
     cursor: pointer;
     opacity: 0.5;
 }
@@ -55,6 +55,15 @@ nav li i {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
 }
 
+.dropdown-content li{
+    font-size: 20px;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
 .open-menu {
     display: none;
 }
@@ -68,24 +77,37 @@ nav li i {
         margin: 0 auto;
     }
 
+    .responsive ul {
+        flex-direction: column;
+    }
+
     .responsive li:not(:first-child){
         display: block;
         text-align: center;
     }
+
+    .dropdown-content{
+        position: relative;
+        background: none;
+        box-shadow: none;
+    }
+
+    .dropdown-content li{
+        font-size: 16px;
+    }
 }
 
 #app{
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 123px);
     padding: 20px 50px;
 }
 
 footer {
-    height: 30px;
-    position:static;
     clear: both;
     width: 100%;
     bottom: 0;
     padding: 10px 0px;
+    vertical-align: middle;
     text-align: center;
     background-color: #3399FE;
     color: white;
