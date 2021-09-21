@@ -98,8 +98,12 @@ nav li i {
 }
 
 #app{
-    min-height: calc(100vh - 123px);
+    min-height: calc(100vh - 173px);
     padding: 20px 50px;
+}
+
+#contact {
+    height: 50px;
 }
 
 footer {
