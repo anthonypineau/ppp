@@ -9,6 +9,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* header menu */
+
 nav {
     overflow: hidden;
     min-height: 50px;
@@ -68,7 +70,7 @@ nav li i {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) { /*à voir changer max-width */
     nav li:not(:first-child) {display: none;}
 
     .open-menu {
@@ -97,10 +99,16 @@ nav li i {
     }
 }
 
-#app{
-    min-height: calc(100vh - 173px);
+/* fin header menu */
+
+#app{ /* +50 px si #contact */
+    min-height: calc(100vh - 123px);
     padding: 20px 50px;
 }
+
+
+
+
 
 #contact {
     height: 50px;
