@@ -437,6 +437,14 @@ ul.main-nav {
   visibility: hidden;
   transition: .25s all;
 }
+
+@media screen and (max-width: 700px){
+  ul.main-nav{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 ul.main-nav li {
   display: inline-block;
 }
