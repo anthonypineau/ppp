@@ -557,12 +557,6 @@ section {
   color: #428bca;
   font-size: 32px;
 }
-.about .icon-box:hover .icon {
-  background: #428bca;
-}
-.about .icon-box:hover .icon i {
-  color: #fff;
-}
 .about .icon-box .title {
   margin-left: 95px;
   font-weight: 700;
@@ -573,9 +567,6 @@ section {
 .about .icon-box .title a {
   color: #343a40;
   transition: 0.3s;
-}
-.about .icon-box .title a:hover {
-  color: #428bca;
 }
 .about .icon-box .description {
   margin-left: 95px;
@@ -1294,3 +1285,5 @@ section {
 #footer .credits a {
   color: #9eccf4;
 }
+
+/* modal */
