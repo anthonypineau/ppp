@@ -5,6 +5,14 @@
 * License: https://bootstrapmade.com/license/
 */
 
+#toToggle p {
+  text-indent: 2em;
+}
+
+#toToggle {
+  margin-bottom: 40px;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
