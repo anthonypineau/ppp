@@ -2,7 +2,7 @@ const listeBP = document.querySelector("#listeBP");
 const listeBPChecked = new Array();
 const phases = ["Aucune phase", "Administration", "Conception", "Réalisation", "Acquisition", "Déploiement", "Utilisation", "Maintenance", "Fin de vie", "Revalorisation"];
 
-fetch("../../data/data.json")
+fetch("https://www.anthonypineau.fr/design4green/data/data.json")
 .then(response => {
    return response.json();
 }).then(data => {
